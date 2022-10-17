@@ -56,7 +56,7 @@ android {
     
     defaultConfig {
         // values linked with applicationId: searchable.searchSuggestAuthority, searchable.searchSuggestIntentData, VideoContract.CONTENT_AUTHORITY
-        applicationId "com.liskovsoft.smarttubetv"
+        applicationId "org.oasisproject.tv"
         minSdkVersion project.properties.minSdkVersion
         targetSdkVersion project.properties.targetSdkVersion
         versionCode 808
@@ -92,6 +92,15 @@ android {
         // }
     }
 
+    splits {
+        abi {
+        enable true
+        reset()
+        include 'armeabi-v7a', 'arm64-v8a'
+        universalApk true
+        }
+    }
+
     // gradle 4.6 migration: disable dimensions mechanism
     // more: https://proandroiddev.com/advanced-android-flavors-part-4-a-new-version-fc2ad80c01bb
     flavorDimensions "default"
@@ -103,12 +112,11 @@ android {
         }
         ststable {
             // matchingFallbacks = ['lite']
-            //applicationId "org.smartteam.smarttube.tv"
-            applicationId "com.teamsmart.videomanager.tv"
+            applicationId "org.oasisproject.tv"
         }
         storig {
             // matchingFallbacks = ['lite']
-            applicationId "org.smartteam.smarttube.tv.orig"
+            applicationId "org.oasisproject.tv"
         }
         strtarmenia {
             // matchingFallbacks = ['lite']
@@ -136,7 +144,7 @@ android {
     // https://stackoverflow.com/questions/18332474/how-to-set-versionname-in-apk-filename-using-gradle
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
-            def project = "STubeNext"
+            def project = "OasisProject"
             def flavor = variant.productFlavors[-1].name
             def buildType = variant.buildType.name.take(1)
             def version = variant.versionName

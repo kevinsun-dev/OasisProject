@@ -17,4 +17,4 @@
 
 <com.liskovsoft.smartyoutubetv2.tv.ui.widgets.marqueetextview.MarqueeTextView xmlns:android="http://schemas.android.com/apk/res/android"
                                                                               android:id="@+id/content_text"
-                                                                              style="?attr/imageCardViewContentStyle" />
+                                                                              style="@style/Oasis.Theme.ImageCardView.ContentStyle" />

@@ -50,11 +50,11 @@ public class VideoCardPresenter extends ExtendedCardPresenter {
         Context context = parent.getContext();
 
         mDefaultBackgroundColor =
-            ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.cardDefaultBackground));
+            ContextCompat.getColor(context, R.color.transparent);
         mDefaultTextColor =
                 ContextCompat.getColor(context, R.color.card_default_text);
         mSelectedBackgroundColor =
-                ContextCompat.getColor(context, Helpers.getThemeAttr(context, R.attr.cardSelectedBackground));
+                ContextCompat.getColor(context, R.color.transparent);
         mSelectedTextColor =
                 ContextCompat.getColor(context, R.color.card_selected_text_grey);
         mDefaultCardImage = new ColorDrawable(ContextCompat.getColor(context, R.color.lb_grey));

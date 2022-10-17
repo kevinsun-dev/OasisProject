@@ -1,6 +1,7 @@
 package com.liskovsoft.smartyoutubetv2.tv.ui.main;
 
-import androidx.multidex.MultiDexApplication;
+import android.app.Application;
+
 import com.liskovsoft.smartyoutubetv2.common.app.views.AddDeviceView;
 import com.liskovsoft.smartyoutubetv2.common.app.views.AppDialogView;
 import com.liskovsoft.smartyoutubetv2.common.app.views.BrowseView;
@@ -27,7 +28,7 @@ import com.liskovsoft.smartyoutubetv2.tv.ui.signin.SignInActivity;
 import com.liskovsoft.smartyoutubetv2.tv.ui.webbrowser.WebBrowserActivity;
 import net.gotev.speech.Speech;
 
-public class MainApplication extends MultiDexApplication { // fix: Didn't find class "com.google.firebase.provider.FirebaseInitProvider"
+public class MainApplication extends Application { // fix: Didn't find class "com.google.firebase.provider.FirebaseInitProvider"
     static {
         // fix youtube bandwidth throttling (best - false)???
         // false is better for streams (less buffering)

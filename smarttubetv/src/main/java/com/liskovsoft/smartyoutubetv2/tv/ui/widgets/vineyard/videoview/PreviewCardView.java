@@ -38,7 +38,6 @@ public class PreviewCardView extends FrameLayout {
 
     private void init() {
         View view = inflate(getContext(), R.layout.widget_preview_card, this);
-
         mMainContainer = view.findViewById(R.id.main_container);
         mVideoView = view.findViewById(R.id.main_video);
         mImageView = view.findViewById(R.id.main_image);
@@ -75,5 +74,4 @@ public class PreviewCardView extends FrameLayout {
         mOverlayView.setVisibility(View.INVISIBLE);
         mProgressCard.setVisibility(View.INVISIBLE);
     }
-
 }

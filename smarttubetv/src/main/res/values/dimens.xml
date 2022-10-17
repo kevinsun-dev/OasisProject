@@ -80,13 +80,13 @@
     -->
     <!--<dimen name="lb_browse_item_horizontal_spacing">15dp</dimen>-->
     <!--<dimen name="lb_browse_item_vertical_spacing">15dp</dimen>-->
-    <dimen name="grid_item_horizontal_spacing">15dp</dimen>
-    <dimen name="grid_item_vertical_spacing">15dp</dimen>
+    <dimen name="grid_item_horizontal_spacing">24dp</dimen>
+    <dimen name="grid_item_vertical_spacing">24dp</dimen>
     <dimen name="grid_horizontal_margin">25dp</dimen>
 
     <!-- Browse headers spacing. Origin: 21dp -->
     <!--<dimen name="lb_browse_headers_vertical_spacing">10dp</dimen>-->
-    <dimen name="browse_headers_vertical_spacing">10dp</dimen>
+    <dimen name="browse_headers_vertical_spacing">21dp</dimen>
 
     <!-- Vine card widget values -->
     <dimen name="lb_basic_card_main_width">140dp</dimen>
@@ -94,7 +94,7 @@
     <dimen name="lb_basic_card_info_height">52dp</dimen>
     <dimen name="lb_basic_card_info_padding">6dp</dimen>
     <dimen name="lb_basic_card_info_text_margin">2dp</dimen>
-    <dimen name="lb_basic_card_title_text_size">16sp</dimen>
+    <dimen name="lb_basic_card_title_text_size">14sp</dimen>
     <dimen name="lb_basic_card_content_text_size">12sp</dimen>
     <dimen name="lb_basic_card_info_badge_size">16dp</dimen>
 

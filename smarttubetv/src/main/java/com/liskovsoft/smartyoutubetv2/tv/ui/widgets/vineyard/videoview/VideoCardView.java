@@ -95,17 +95,6 @@ public class VideoCardView extends BaseCardView {
             mInfoArea.addView(mContentView);
         }
 
-        // Backward compatibility: Newly created ImageCardViews should change
-        // the InfoArea's background color in XML using the corresponding style.
-        // However, since older implementations might make use of the
-        // 'infoAreaBackground' attribute, we have to make sure to support it.
-        // If the user has set a specific value here, it will differ from null.
-        // In this case, we do want to override the value set in the style.
-        Drawable background = cardAttrs.getDrawable(R.styleable.lbImageCardView_infoAreaBackground);
-        if (null != background) {
-            setInfoAreaBackground(background);
-        }
-
         cardAttrs.recycle();
     }
 
@@ -149,15 +138,6 @@ public class VideoCardView extends BaseCardView {
         lp.width = width;
         lp.height = height;
         mPreviewCard.setLayoutParams(lp);
-    }
-
-    /**
-     * Sets the info area background drawable.
-     */
-    public void setInfoAreaBackground(Drawable drawable) {
-        if (mInfoArea != null) {
-            mInfoArea.setBackground(drawable);
-        }
     }
 
     public void setVideoUrl(String url) {

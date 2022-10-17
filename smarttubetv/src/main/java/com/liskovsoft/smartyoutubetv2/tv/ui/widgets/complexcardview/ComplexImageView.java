@@ -1,6 +1,7 @@
 package com.liskovsoft.smartyoutubetv2.tv.ui.widgets.complexcardview;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,9 @@ import android.widget.ImageView.ScaleType;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.core.widget.ImageViewCompat;
+
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.liskovsoft.smartyoutubetv2.tv.R;
@@ -78,7 +82,7 @@ public class ComplexImageView extends RelativeLayout {
             return;
         }
 
-        mBadgeText.setBackgroundColor(color);
+        mBadgeText.setBackgroundTintList(ColorStateList.valueOf(color));
     }
 
     /**

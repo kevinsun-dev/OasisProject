@@ -36,6 +36,7 @@ public class ComplexImageCardView extends ImageCardView {
 
     private void init() {
         mComplexImageView = findViewById(R.id.main_image_wrapper);
+        mComplexImageView.setClipToOutline(true);
         mHandler = new Handler(Looper.getMainLooper());
     }
 

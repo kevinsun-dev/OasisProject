@@ -181,4 +181,14 @@
         <item name="shelfBackground">@color/scheme_red_shelf_background_dark</item>
     </style>
     <!--  End Color scheme: Dark Grey (monochrome)  -->
+    
+    
+    <!-- Oasis Theme Elements -->
+    <style name="Oasis.Theme.ImageCardView.TitleStyle" parent="Widget.Leanback.ImageCardView.TitleStyle">
+        <item name="android:fontFamily">@font/raleway_medium</item>
+    </style>
+    <style name="Oasis.Theme.ImageCardView.ContentStyle" parent="Widget.Leanback.ImageCardView.ContentStyle">
+        <item name="android:fontFamily">@font/raleway_regular</item>
+    </style>
+
 </resources>
